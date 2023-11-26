@@ -17,4 +17,11 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--ff-main), monospace;
+  font-weight: var(--fw-text, 400);
+  background-color: var(--bgc-theme);
+}
+
+.theme-menu__button {
+  color: var(--main-color, #000000);
 }
