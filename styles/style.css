@@ -20,6 +20,21 @@
   font-family: var(--ff-main), monospace;
   font-weight: var(--fw-text, 400);
   background-color: var(--bgc-theme);
+  background-image: 
+    repeating-linear-gradient(
+      var(--gradient-color),
+      transparent 2px
+    ),
+    repeating-linear-gradient(
+      90deg, 
+      var(--gradient-color), 
+      transparent 2px
+    ),
+    linear-gradient(
+      var(--gradient-start) 0.01%, 
+      var(--gradient-end)
+    );
+  background-size: cover;
 }
 
 .theme-menu__button {

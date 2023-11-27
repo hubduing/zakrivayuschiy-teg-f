@@ -8,4 +8,7 @@
   --main-color: #000000;
   --bgc-theme: #ffffff;
   --accent-color: #FF0000;
+  --gradient-color: #d3d3d3;
+  --gradient-start: #e7e7e7;
+  --gradient-end: #1a1a1a;
 }
