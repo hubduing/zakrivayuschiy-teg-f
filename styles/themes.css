@@ -8,7 +8,7 @@
   --fw-text: 465;
   --fw-title: 785;
   --main-color: #00CC14;
-  --bgc-theme: #fff;
+  --bgc-theme: #000000;
 }
 
 :root.theme-light {
