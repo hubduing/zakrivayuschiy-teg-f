@@ -171,13 +171,59 @@
 
 @supports (-webkit-text-stroke: 1px var(--bgc-theme)) {
   .container .container__text {
+    text-shadow: none;
     mix-blend-mode: hard-light;
     -webkit-text-stroke: 1px var(--bgc-theme);
   }
 }
 
-.container .card__image {
+.card__list .card:nth-child(1) .card__image {
+  mix-blend-mode: exclusion;
+}
+
+.card__list .card:nth-child(2) .container {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,92,9,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.card__list .card:nth-child(2) .card__image {
+  mix-blend-mode: color-dodge;
+}
+
+.card__list .card:nth-child(3) .container {
+  background-color: var(--main-color, #000000);
+}
+.card__list .card:nth-child(3) .card__image {
+  mix-blend-mode: normal;
+}
+
+.card__list .card:nth-child(4) .card__image {
   mix-blend-mode: hard-light;
+}
+
+.card__list .card:nth-child(5) .card__image {
+  mix-blend-mode: difference;
+}
+
+.card__list .card:nth-child(6) .container {
+  background-color: var(--main-color, #000000);
+}
+.card__list .card:nth-child(6) .card__image {
+  mix-blend-mode: luminosity;
+}
+
+.card__list .card:nth-child(7) .container {
+  background-color: var(--main-color, #000000);
+}
+.card__list .card:nth-child(7) .card__image {
+  mix-blend-mode: hard-light;
+}
+
+.card__list .card:nth-child(8) .container {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.card__list .card:nth-child(8) .card__image {
+  mix-blend-mode: multiply;
 }
 
 .theme-menu__button:hover,
