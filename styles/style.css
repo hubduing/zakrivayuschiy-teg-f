@@ -180,16 +180,6 @@
   mix-blend-mode: hard-light;
 }
 
-.button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-accent), monospace;
-  background-color: var(--bgc-theme);
-  border: 2px solid var(--main-color);
-}
-
 .theme-menu__button:hover,
 .theme-menu__button:active,
 .theme-menu__button:disabled {
@@ -243,10 +233,16 @@
   outline: 2px solid var(--main-color, #000000);
 }
 
-.like-icon {
-  display: block;
-  width: 39px;
-  height: 36px;
+.button {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--ff-accent), monospace;
+  background-color: var(--bgc-theme);
+  border: 2px solid var(--main-color);
 }
 
 .card__like-button {
@@ -290,8 +286,75 @@
   color: var(--button-color);
 }
 
+.like-icon {
+  display: block;
+  width: 39px;
+  height: 36px;
+}
+
 .like-icon .sparks {
   opacity: 0;
+}
+
+.like-icon:hover .core {
+  transition: 0.3s;
+  fill: var(--main-color);
+}
+
+.like-icon:hover .main-body {
+  transition: 0.3s 0.05s;
+  fill: var(--main-color);
+}
+
+
+.like-icon:active .main-body {
+  fill: var(--heart, #ff0000);
+}
+
+.like-icon:active .core {
+  fill: var(--heart, #ff0000);
+}
+
+.like-icon.is-liked .core {
+  transition: 0.3s;
+  fill: var(--heart, #ff0000);
+}
+
+.like-icon.is-liked .main-body {
+  transition: 0.3s 0.05s;
+  fill: var(--heart, #ff0000);
+}
+
+.like-icon.is-liked .contour {
+  transition: 0.3s 0.06s;
+  fill: var(--heart, #ff0000);
+}
+
+@keyframes heart {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;;
+  }
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: heart 0.3s 0.1s ease-in alternate-reverse;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in alternate-reverse;
 }
 
 .footer {
@@ -314,4 +377,43 @@
   margin-right: 8px;
   mix-blend-mode: difference;
   fill: var(--button-color);
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: var(--bgc-theme);
+  color: var(--main-color);
+  max-inline-size: 357px;
+  inline-size: 30%;
+  min-inline-size: 341px;
+}
+
+.dialog__container {
+  display: flex;
+  gap: 12px;
+}
+
+.dialog__container .floppy {
+  display: block;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog__title {
+  display: block;
+  text-transform: uppercase;
+  font-family: var(--ff-accent), monospace;
+  font-size: var(--fz-nav, 14px);
+  line-height: var(--lh-title, 21px);
+  font-weight: var(--fw-text, 400);
+}
+
+.close {
+  display: block;
+  width: 100%;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
 }
