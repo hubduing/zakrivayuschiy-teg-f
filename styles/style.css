@@ -210,6 +210,7 @@
 }
 .card__list .card:nth-child(6) .card__image {
   mix-blend-mode: luminosity;
+  filter: blur(4px);
 }
 
 .card__list .card:nth-child(7) .container {
@@ -219,11 +220,8 @@
   mix-blend-mode: hard-light;
 }
 
-.card__list .card:nth-child(8) .container {
-  background-color: rgba(0, 0, 0, 0.5);
-}
 .card__list .card:nth-child(8) .card__image {
-  mix-blend-mode: multiply;
+  filter: blur(4px);
 }
 
 .theme-menu__button:hover,
