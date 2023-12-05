@@ -210,7 +210,6 @@
 }
 .card__list .card:nth-child(6) .card__image {
   mix-blend-mode: luminosity;
-  filter: blur(4px);
 }
 
 .card__list .card:nth-child(7) .container {
