@@ -1,18 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --ff-main: "Inter-Variable";
-  --ff-accent: "PressStart2P";
-  --fw-text: 400;
-  --fw-title: 700;
-  --fz-main: 18px;
-  --lh-title: 21px;
-  --fz-nav: 14px;
+  --font-family-main: "Inter-Variable";
+  --font-family-accent: "PressStart2P";
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+  --font-size-main: 18px;
+  --line-height-title: 21px;
+  --font-size-nav: 14px;
   --main-color: #000000;
-  --bgc-theme: #ffffff;
+  --background-theme: #ffffff;
   --accent-color: #FF0000;
   --gradient-color: #d3d3d3;
   --gradient-start: #e7e7e7;
   --gradient-end: #1a1a1a;
-  --button-color: #ffffff;
   --heart: #FF0000;
+  --button-color: #ffffff;
 }

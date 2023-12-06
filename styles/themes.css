@@ -5,18 +5,23 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-dark {
-  --fw-text: 465;
-  --fw-title: 785;
+  --font-weight-text: 465;
+  --font-weight-title: 785;
   --main-color: #00CC14;
-  --bgc-theme: #000000;
+  --button-color: #00CC14;
+  --background-theme: #000000;
+  --gradient-color: #000000;
+  --gradient-start: #007f0c;
+  --gradient-end: #004306;
   --button-color: #00CC14;
 }
 
 :root.theme-light {
-  --fw-text: 400;
-  --fw-title: 700;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
   --main-color: #000000;
-  --bgc-theme: #ffffff;
+  --background-theme: #ffffff;
+  --accent-color: #FF0000;
   --gradient-color: #d3d3d3;
   --gradient-start: #e7e7e7;
   --gradient-end: #1a1a1a;
@@ -25,13 +30,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fw-text: 465;
-    --fw-title: 785;
+    --font-weight-text: 465;
+    --font-weight-title: 785;
     --main-color: #00CC14;
-    --bgc-theme: #000000;
+    --button-color: #00CC14;
+    --background-theme: #000000;
     --gradient-color: #000000;
     --gradient-start: #007f0c;
     --gradient-end: #004306;
     --button-color: #00CC14;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --font-weight-text: 400;
+    --font-weight-title: 700;
+    --main-color: #000000;
+    --background-theme: #ffffff;
+    --gradient-color: #d3d3d3;
+    --gradient-start: #e7e7e7;
+    --gradient-end: #1a1a1a;
+    --button-color: #ffffff;
   }
 }
