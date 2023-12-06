@@ -308,7 +308,7 @@ filter: sepia(1);}
   outline: 2px solid var(--main-color, #000000);
 }
 
-.button {
+.card__like-button {
   position: relative;
   display: flex;
   cursor: pointer;
@@ -319,9 +319,6 @@ filter: sepia(1);}
   background-color: var(--background-theme, #ffffff);
   border: 2px solid var(--main-color, #000000);
   transition: box-shadow 0.3s ease;
-}
-
-.card__like-size {
   inline-size: 130px;
   block-size: 38px;
 }
@@ -356,20 +353,27 @@ filter: sepia(1);}
   color: var(--button-color, #ffffff);
 }
 
-.footer {
+.save__container {
   display: flex;
   justify-content: center;
   margin: 50px auto 103px;
 }
 
-.footer .button {
+.save__container .button {
+  position: relative;
   display: flex;
+  cursor: pointer;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-family-accent), fantasy;
   background-color: var(--background-theme, #ffffff);
+  border: 2px solid var(--main-color, #000000);
+  transition: box-shadow 0.3s ease;
   padding: 15.5px 21px 15.5px 21px;
 }
 
-.footer .floppy {
+.save__container .floppy {
   width: 21px;
   height: 21px;
   display: block;
@@ -415,6 +419,16 @@ filter: sepia(1);}
 }
 
 .close {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-family-accent), fantasy;
+  background-color: var(--background-theme, #ffffff);
+  border: 2px solid var(--main-color, #000000);
+  transition: box-shadow 0.3s ease;
   width: 100%;
   padding-block-start: 12.5px;
   padding-block-end: 12.5px;
