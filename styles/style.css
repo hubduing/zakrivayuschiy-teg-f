@@ -202,8 +202,7 @@
   margin-inline-end: 40px;
 }
 
-.card__text-description,
-.card__text-memory {
+.card__text-description {
   font-weight: var(--font-weight-text, 400);
   font-size: var(--font-size-main, 18px);
   line-height: var(--line-height-title, 21px);
